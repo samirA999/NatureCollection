@@ -13,6 +13,9 @@
     <String name="add_plant_page_title">Ajout d\'une plante </String>
     <String name="add_plant_page_upload_button">Charger Image </String>
 
+    <!-- plantes custommis-->
+    <String name="item_plant_name">Nom de la plante </String>
+    <String name="item_plant_description"> Desciption de la plante </String>
 
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
