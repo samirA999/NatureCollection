@@ -9,6 +9,11 @@
     <!-- Page de collection -->
     <String name="collection_page_title">Ma Collection </String>
 
+    <!-- page d'Ajout de plantes -->
+    <String name="add_plant_page_title">Ajout d\'une plante </String>
+    <String name="add_plant_page_upload_button">Charger Image </String>
+
+
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
