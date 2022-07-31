@@ -12,6 +12,8 @@
     <!-- page d'Ajout de plantes -->
     <String name="add_plant_page_title">Ajout d\'une plante </String>
     <String name="add_plant_page_upload_button">Charger Image </String>
+    <String name="add_plant_page_name_input"> @string/item_plant_name </String>
+    <String name="add_plant_page_description_input"> @string/item_plant_description </String>
 
     <!-- plantes custommis-->
     <String name="item_plant_name">Nom de la plante </String>
