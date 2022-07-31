@@ -19,6 +19,14 @@
     <String name="item_plant_name">Nom de la plante </String>
     <String name="item_plant_description"> Desciption de la plante </String>
 
+
+
+    <String-array name =" add_plant_page_grow_spinner_input">
+        <item> Croissance : lente </item>
+        <item> Croissance : moyenne </item>
+        <item> Croissance : rapide </item>
+
+    </String-array>
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
