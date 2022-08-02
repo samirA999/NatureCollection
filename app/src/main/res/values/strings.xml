@@ -3,8 +3,8 @@
     <string name="action_settings">Settings</string>
 
     <!-- Strings page d'acceuil -->
-    <String name="homme_page_title"> A découvrir</String>
-    <String name="homme_page_last_plant_section"> Dernières plantes </String>
+    <String name="home_page_title"> A découvrir</String>
+    <String name="home_page_last_plant_section"> Dernières plantes </String>
 
     <!-- Page de collection -->
     <String name="collection_page_title">Ma Collection </String>
