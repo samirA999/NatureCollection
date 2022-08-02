@@ -19,6 +19,11 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+
+    <style name="DefaultTextStyle">
+        <item name="android:textColor">@color/lightGrey</item>
+        <item name="android:textSize">18dp</item>
+    </style>
     <style name="Theme.NatureCollection.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.NatureCollection.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
