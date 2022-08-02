@@ -19,11 +19,26 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+<!--Creer le composant sous titre par defaut -->
 
     <style name="DefaultTextStyle">
         <item name="android:textColor">@color/lightGrey</item>
         <item name="android:textSize">18dp</item>
     </style>
+
+    <!--Creer le composant titre par defaut -->
+
+    <style name="SubtitleTextStyle" parent="DefaultTextStyle">
+        <item name="android:textColor"> @color/darkGreen</item>
+    </style>
+
+
+    <!--Creer le composant titre par defaut -->
+
+    <style name="TitleTextStyle" parent="SubtitleTextStyle">
+        <item name="android:textSize">24dp </item>
+    </style>
+
     <style name="Theme.NatureCollection.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.NatureCollection.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
