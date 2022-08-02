@@ -3,15 +3,17 @@
     <string name="action_settings">Settings</string>
 
     <!-- Strings page d'acceuil -->
-    <String name="home_page_title"> A découvrir</String>
-    <String name="home_page_last_plant_section"> Dernières plantes </String>
+    <!--String name="home_page_title"> A découvrir</String-->
+    <string name="home_page_last_plant_section"> Dernières plantes </string>
+
+    <string name="home_page_title">A découvrir</string>
 
     <!-- Page de collection -->
-    <String name="collection_page_title">Ma Collection </String>
+    <string name="collection_page_title">Ma Collection </string>
 
     <!-- page d'Ajout de plantes -->
-    <String name="add_plant_page_title">Ajout d\'une plante </String>
-    <String name="add_plant_page_upload_button">Charger Image </String>
+    <string name="add_plant_page_title">Ajout d\'une plante </string>
+    <string name="add_plant_page_upload_button">Charger Image </string>
     <String name="add_plant_page_name_input"> @string/item_plant_name </String>
     <String name="add_plant_page_description_input"> @string/item_plant_description </String>
 
@@ -40,4 +42,5 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
 </resources>
