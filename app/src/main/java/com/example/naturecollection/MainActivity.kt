@@ -17,13 +17,18 @@ class MainActivity : AppCompatActivity() {
        
     //injecter le fragment dans notre boite ( fragment_container)
 
-    }
 
-    private fun setContenView(activityMain: Int) {
+
+
 
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.fragment_container,HomeFragment())
         transaction.addToBackStack(null)
+        transaction.commit()
+
+    }
+
+    private fun setContenView(activityMain: Int) {
 
     }
 }
