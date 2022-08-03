@@ -1,35 +1,24 @@
-package com.example.naturecollection
+package com.example.naturecollection.fragments
 
 import android.os.Bundle
-
 import androidx.appcompat.app.AppCompatActivity
-import com.example.naturecollection.fragments.HomeFragment
-
+import com.example.naturecollection.R
 
 class MainActivity : AppCompatActivity() {
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContenView(R.layout.activity_main)
-
-       
-    //injecter le fragment dans notre boite ( fragment_container)
+        setContentView(R.layout.activity_main)
 
 
-
+        //injecter le fragment dans notre boite ( fragment_container)
 
 
         val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.fragment_container,HomeFragment())
+        transaction.replace(R.id.fragment_container, HomeFragment())
         transaction.addToBackStack(null)
         transaction.commit()
 
     }
-
-    private fun setContenView(activityMain: Int) {
-
-    }
 }
-
