@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
         setContenView(R.layout.activity_main)
 
        
+    //injecter le fragment dans notre boite ( fragment_container)
+
     }
 
     private fun setContenView(activityMain: Int) {
