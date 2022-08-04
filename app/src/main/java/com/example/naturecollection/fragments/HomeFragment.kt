@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.naturecollection.R
+import com.example.naturecollection.adapter.PlantAdapter
 
 class HomeFragment : Fragment() {
 
@@ -19,6 +20,7 @@ class HomeFragment : Fragment() {
         // recuperer le recyclerview
 
         val horizontalRecyclerView = view.findViewById<RecyclerView>(R.id.horizontal_recycler_view)
+        horizontalRecyclerView.adapter = PlantAdapter()
         return view
     }
 }
