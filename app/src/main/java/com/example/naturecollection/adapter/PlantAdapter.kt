@@ -24,14 +24,15 @@ class PlantAdapter : RecyclerView.Adapter<PlantAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater
             .from(parent.context)
-            .inflate(R.layout.item_horizontal_plant)
+            .inflate(R.layout.item_horizontal_plant,parent,false)
+        return ViewHolder(view)
     }
+//metre ajour chaqueplante
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {}
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        TODO("Not yet implemented")
-    }
 
-    override fun getItemCount(): Int {
-        TODO("Not yet implemented")
-    }
+    //renvoyer commebien item a afficher
+    override fun getItemCount(): Int = 5
+
+
 }
