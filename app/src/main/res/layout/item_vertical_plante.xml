@@ -41,7 +41,8 @@
         android:layout_height="wrap_content"
         android:text="@string/item_plant_name"
         app:layout_constraintBottom_toTopOf="@+id/view_separation"
-        tools:layout_editor_absoluteX="90dp" />
+        tools:layout_editor_absoluteX="90dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         style="@style/DefaultTextStyle"
