@@ -3,6 +3,7 @@
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -31,12 +32,23 @@
         android:layout_height="1dp"
         android:background="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView"
+        style="@style/SubtitleTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/item_plant_name"
-        style="@style/SubtitleTextStyle"/>
+        app:layout_constraintBottom_toTopOf="@+id/view_separation"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <TextView
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_plant_description"
+        app:layout_constraintTop_toBottomOf="@+id/view_separation"
+        tools:layout_editor_absoluteX="80dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
