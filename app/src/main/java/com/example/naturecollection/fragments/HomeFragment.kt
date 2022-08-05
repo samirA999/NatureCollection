@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.naturecollection.R
 import com.example.naturecollection.adapter.PlantAdapter
+import com.example.naturecollection.adapter.PlantItemDecoration
 
 class HomeFragment : Fragment() {
 
@@ -28,6 +29,9 @@ class HomeFragment : Fragment() {
 
         val verticalRecyclerView = view.findViewById<RecyclerView>(R.id.vertical_recycler_view)
         verticalRecyclerView.adapter = PlantAdapter(R.layout.item_vertical_plante)
+        verticalRecyclerView.addItemDecoration(PlantItemDecoration())
+
+
         return view
     }
 }
