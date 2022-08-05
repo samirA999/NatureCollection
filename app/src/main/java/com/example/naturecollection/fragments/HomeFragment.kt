@@ -11,7 +11,10 @@ import com.example.naturecollection.R
 import com.example.naturecollection.adapter.PlantAdapter
 import com.example.naturecollection.adapter.PlantItemDecoration
 
-class HomeFragment : Fragment() {
+class HomeFragment (
+
+    private val context: MainActivity
+        ): Fragment() {
 
     override fun onCreateView( inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
@@ -65,14 +68,14 @@ class HomeFragment : Fragment() {
         // recuperer le recyclerview
 
         val horizontalRecyclerView = view.findViewById<RecyclerView>(R.id.horizontal_recycler_view)
-        horizontalRecyclerView.adapter = PlantAdapter(R.layout.item_horizontal_plant)
+        horizontalRecyclerView.adapter = PlantAdapter(context, plantList, R.layout.item_horizontal_plant)
 
 
 
         //recuperer le second recycleview ( vertical)
 
         val verticalRecyclerView = view.findViewById<RecyclerView>(R.id.vertical_recycler_view)
-        verticalRecyclerView.adapter = PlantAdapter(R.layout.item_vertical_plante)
+        verticalRecyclerView.adapter = PlantAdapter(context, plantList, R.layout.item_vertical_plante)
         verticalRecyclerView.addItemDecoration(PlantItemDecoration())
 
 
