@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.naturecollection.PlantModel
@@ -27,7 +28,8 @@ class PlantAdapter (
         //image de la plante ?
 
         val plantImage = view.findViewById<ImageView>(R.id.image_item)
-
+        val plantName:TextView? = view.findViewById(R.id.name_item)
+        val PlantDescription:TextView? = view.findViewById(R.id.description_item)
 
 
     }
@@ -49,6 +51,13 @@ class PlantAdapter (
     //utiliser glide pour recuperer l'image à partir de sont  lien  -> composant
 
     Glide.with(context).load(Uri.parse(currentPlant.imageUrl)).into(holder.plantImage)
+
+    //mettre a jour le nom de la plante
+
+    holder.plantName?.text = currentPlant.name
+
+    //mettre a jour la description
+    holder.PlantDescription?.text = currentPlant.description
 
 
     }
