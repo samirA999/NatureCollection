@@ -20,7 +20,13 @@ class HomeFragment : Fragment() {
         // recuperer le recyclerview
 
         val horizontalRecyclerView = view.findViewById<RecyclerView>(R.id.horizontal_recycler_view)
-        horizontalRecyclerView.adapter = PlantAdapter()
+        horizontalRecyclerView.adapter = PlantAdapter(R.layout.item_horizontal_plant)
+
+
+
+        //recuperer le second recycleview ( vertical)
+
+        val verticalRecyclerView = view.findViewById<RecyclerView>(R.id.vertical_recycler_view)
         return view
     }
 }
