@@ -30,6 +30,7 @@ class PlantAdapter (
         val plantImage = view.findViewById<ImageView>(R.id.image_item)
         val plantName:TextView? = view.findViewById(R.id.name_item)
         val PlantDescription:TextView? = view.findViewById(R.id.description_item)
+        val starIcon = view.findViewById<ImageView>(R.id.star_icon)
 
 
     }
