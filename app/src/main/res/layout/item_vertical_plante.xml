@@ -3,7 +3,6 @@
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -41,10 +40,10 @@
         style="@style/SubtitleTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_margin"
         android:text="@string/item_plant_name"
         app:layout_constraintBottom_toTopOf="@+id/view_separation"
-        tools:layout_editor_absoluteX="90dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toEndOf="@+id/cardView"/>
 
     <TextView
         android:id="@+id/description_item"
@@ -60,7 +59,7 @@
         android:id="@+id/star_icon"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginStart="300dp"
+        android:layout_marginStart="260dp"
         android:src="@drawable/ic_unstar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cardView"
