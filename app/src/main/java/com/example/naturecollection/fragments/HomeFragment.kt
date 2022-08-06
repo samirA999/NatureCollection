@@ -50,7 +50,7 @@ class HomeFragment (
                 "Cactus",
                 "ça pique BEAUCOUP",
                 "https://media.istockphoto.com/photos/blooming-prickly-pear-cactus-on-the-island-of-hvar-croatia-picture-id1326892451",
-                false
+                true
             ))
 
 

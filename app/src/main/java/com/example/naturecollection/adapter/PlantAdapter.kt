@@ -60,6 +60,15 @@ class PlantAdapter (
     //mettre a jour la description
     holder.PlantDescription?.text = currentPlant.description
 
+    //verifier si la palnte et liker?
+
+    if (currentPlant.liked){
+        holder.starIcon.setImageResource(R.drawable.ic_star)
+    }
+    else {
+        holder.starIcon.setImageResource(R.drawable.ic_unstar)
+    }
+
 
     }
 
