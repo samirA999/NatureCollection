@@ -36,7 +36,7 @@ class PlantRepository {
 
                 }
 
-                //acctionner le callbac
+                //acctionner le callback
                 callback()
 
             }

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "577371630606-s6m4ue145kaliil2qoh3vbbumgdkstr4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.naturecollection",
+            "certificate_hash": "5a85f96461005cde0f3b1315231f419490c95429"
+          }
+        },
+        {
           "client_id": "577371630606-k7fj5qaqmijg4g3ih2b0bl0m9cln528b.apps.googleusercontent.com",
           "client_type": 3
         }
