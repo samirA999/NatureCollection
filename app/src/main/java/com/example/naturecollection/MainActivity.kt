@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
 
         //mettre a jour la liste de plantes
-        repo.updateData{
+        repo.updateData {
 
             //injecter le fragment dans notre boite ( fragment_container)
             val transaction = supportFragmentManager.beginTransaction()
@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
             transaction.commit()
 
         }
-
 
     }
 }
