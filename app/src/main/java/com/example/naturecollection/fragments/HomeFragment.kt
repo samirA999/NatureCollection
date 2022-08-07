@@ -24,7 +24,7 @@ class HomeFragment (
         val plantList = arrayListOf<PlantModel>()
 
         //enregistrer une première plante dans notre liste (pissenli)
-        plantList.add(
+   /*     plantList.add(
             PlantModel(
             "Pissenlit",
             "jaune soleil",
@@ -61,7 +61,7 @@ class HomeFragment (
                 "c'est beau",
                 "https://media.istockphoto.com/photos/tulips-spring-flowers-tulip-field-in-the-sunlight-picture-id1355093980",
                 false
-            ))
+            ))*/
 
 
 
