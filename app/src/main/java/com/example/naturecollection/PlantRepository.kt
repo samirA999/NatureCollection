@@ -16,13 +16,15 @@ class PlantRepository {
         //creer une liste qui va contenir nos plantes
         val plantList = arrayListOf<PlantModel>()
     }
-    fun updateData(){
+    fun updateData(callback: () -> Unit){
 
         //absorber les données depuis la databaseRef -> liste de plantes
         databaseRef.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
-                //recolter la liste
+                //retirer les anciennes
+                plantList.clear()
 
+                //recolter la liste
                 for (ds in snapshot.children) {
                     //construire un objet plante
                     val plant = ds.getValue(PlantModel::class.java)
@@ -33,6 +35,9 @@ class PlantRepository {
                     }
 
                 }
+
+                //acctionner le callbac
+                callback()
 
             }
 

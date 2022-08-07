@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
-import com.example.naturecollection.PlantModel
+import com.example.naturecollection.PlantRepository.Singleton.plantList
 import com.example.naturecollection.R
 import com.example.naturecollection.adapter.PlantAdapter
 import com.example.naturecollection.adapter.PlantItemDecoration
@@ -20,11 +20,11 @@ class HomeFragment (
 
         val view = inflater?.inflate(R.layout.fragment_home, container, false)
 
-        //creer une liste qui va stocker ces plantes
+      /*  //creer une liste qui va stocker ces plantes
         val plantList = arrayListOf<PlantModel>()
 
         //enregistrer une première plante dans notre liste (pissenli)
-   /*     plantList.add(
+        plantList.add(
             PlantModel(
             "Pissenlit",
             "jaune soleil",
