@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.naturecollection.PlantModel
+import com.example.naturecollection.PlantRepository
 import com.example.naturecollection.R
 import com.example.naturecollection.fragments.MainActivity
 
@@ -49,6 +50,10 @@ class PlantAdapter (
 
         val currentPlant = plantList[position]
 
+    //recuperer le repository
+
+    val repo = PlantRepository()
+
     //utiliser glide pour recuperer l'image à partir de sont  lien  -> composant
 
     Glide.with(context).load(Uri.parse(currentPlant.imageUrl)).into(holder.plantImage)
@@ -70,6 +75,14 @@ class PlantAdapter (
     }
 
 
+    //rajouter une interaction sur cette etoile
+    holder.starIcon.setOnClickListener {
+        //inverse si le bouton est like ou non
+        currentPlant.liked = !currentPlant.liked
+
+        //mettre a jour l'objet plante
+        repo.updatePlant(currentPlant)
+      }
     }
 
 
