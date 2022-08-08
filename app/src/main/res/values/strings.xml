@@ -50,5 +50,6 @@
     <string name="popup_plant_grow_title">Croissance</string>
     <string name="popup_plant_grow_subtitle">Lente</string>
     <string name="popup_plant_water">Consomation Eau</string>
+    <string name="popup_plant_water_subtitle">Faible</string>
 
 </resources>

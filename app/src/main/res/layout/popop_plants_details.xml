@@ -93,5 +93,23 @@
         app:layout_constraintStart_toStartOf="@+id/popup_plant_grow_subtitle"
         app:layout_constraintTop_toBottomOf="@+id/popup_plant_grow_subtitle" />
 
+    <TextView
+        android:id="@+id/popup_plant_water_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_plant_water_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/popup_plant_water"
+        app:layout_constraintTop_toBottomOf="@+id/popup_plant_water"
+        style="@style/DefaultTextStyle"/>
+
+
+    <View
+        android:id="@+id/view_separation"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popup_plant_water_subtitle" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
