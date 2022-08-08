@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.naturecollection.PlantModel
+import com.example.naturecollection.PlantPopup
 import com.example.naturecollection.PlantRepository
 import com.example.naturecollection.R
 import com.example.naturecollection.fragments.MainActivity
@@ -16,7 +17,7 @@ import com.example.naturecollection.fragments.MainActivity
 class PlantAdapter (
 
 
-    private val context : MainActivity,
+    val context : MainActivity,
 
     private val plantList: List<PlantModel>,
 
@@ -83,6 +84,12 @@ class PlantAdapter (
         //mettre a jour l'objet plante
         repo.updatePlant(currentPlant)
       }
+
+    // interacton lors du clic sur une plante
+    holder.itemView.setOnClickListener {
+        //affichez la poppup
+        PlantPopup(this).show()
+    }
     }
 
 
