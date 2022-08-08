@@ -49,5 +49,6 @@
     <string name="popup_plant_description_subtitle">Petite desciption</string>
     <string name="popup_plant_grow_title">Croissance</string>
     <string name="popup_plant_grow_subtitle">Lente</string>
+    <string name="popup_plant_water">Consomation Eau</string>
 
 </resources>

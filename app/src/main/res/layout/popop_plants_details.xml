@@ -83,7 +83,15 @@
         app:layout_constraintTop_toBottomOf="@+id/popup_plant_grow_title"
         style="@style/DefaultTextStyle"/>
 
-
+    <TextView
+        android:id="@+id/popup_plant_water"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_plant_water"
+        android:layout_marginTop="@dimen/default_margin"
+        app:layout_constraintStart_toStartOf="@+id/popup_plant_grow_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/popup_plant_grow_subtitle" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
