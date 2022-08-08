@@ -64,5 +64,26 @@
         app:layout_constraintTop_toBottomOf="@+id/popup_plant_description_name"
         style="@style/DefaultTextStyle"/>
 
+    <TextView
+        android:id="@+id/popup_plant_grow_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_plant_grow_title"
+        android:layout_marginTop="@dimen/default_margin"
+        app:layout_constraintStart_toStartOf="@+id/popup_plant_description_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/popup_plant_description_subtitle"
+        style="@style/TitleTextStyle"/>
+
+    <TextView
+        android:id="@+id/popup_plant_grow_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_plant_grow_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/popup_plant_grow_title"
+        app:layout_constraintTop_toBottomOf="@+id/popup_plant_grow_title"
+        style="@style/DefaultTextStyle"/>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

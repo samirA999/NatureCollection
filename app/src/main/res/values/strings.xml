@@ -47,5 +47,7 @@
     <string name="popup_plant_name">Plant Name</string>
     <string name="popup_plant_description_title">Desciption</string>
     <string name="popup_plant_description_subtitle">Petite desciption</string>
+    <string name="popup_plant_grow_title">Croissance</string>
+    <string name="popup_plant_grow_subtitle">Lente</string>
 
 </resources>
