@@ -106,10 +106,31 @@
     <View
         android:id="@+id/view_separation"
         android:layout_width="1dp"
-        android:layout_height="10dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/popup_plant_water_subtitle" />
+
+
+    <ImageView
+        android:id="@+id/delete_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_trash"
+        app:layout_constraintBottom_toBottomOf="@+id/view_separation"
+        app:layout_constraintTop_toTopOf="@+id/view_separation"
+        app:layout_constraintEnd_toEndOf="@+id/view_separation" />
+
+
+    <ImageView
+        android:id="@+id/_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_unstar"
+        app:layout_constraintBottom_toBottomOf="@+id/view_separation"
+        app:layout_constraintStart_toEndOf="@+id/delete_button"
+        app:layout_constraintTop_toTopOf="@+id/view_separation" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
