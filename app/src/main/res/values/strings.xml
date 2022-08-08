@@ -46,5 +46,6 @@
     <string name="hello_second_fragment">Hello second fragment</string>
     <string name="popup_plant_name">Plant Name</string>
     <string name="popup_plant_description_title">Desciption</string>
+    <string name="popup_plant_description_subtitle">Petite desciption</string>
 
 </resources>

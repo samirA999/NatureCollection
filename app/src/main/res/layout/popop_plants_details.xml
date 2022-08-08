@@ -48,9 +48,21 @@
         android:id="@+id/popup_plant_description_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
         android:text="@string/popup_plant_description_title"
         app:layout_constraintTop_toBottomOf="@+id/cardView2"
-        app:layout_constraintStart_toStartOf="@+id/cardView2"/>
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        style="@style/TitleTextStyle"/>
+
+
+    <TextView
+        android:id="@+id/popup_plant_description_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_plant_description_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/popup_plant_description_name"
+        app:layout_constraintTop_toBottomOf="@+id/popup_plant_description_name"
+        style="@style/DefaultTextStyle"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
