@@ -51,5 +51,6 @@
     <string name="popup_plant_grow_subtitle">Lente</string>
     <string name="popup_plant_water">Consomation Eau</string>
     <string name="popup_plant_water_subtitle">Faible</string>
+    <string name="add_plant_page_confirm_input">CONFIRMER</string>
 
 </resources>
