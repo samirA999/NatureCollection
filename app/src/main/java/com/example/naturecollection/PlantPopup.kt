@@ -21,6 +21,28 @@ class PlantPopup (
         setContentView(R.layout.popop_plants_details)
         setupComponents()
         setupCloseButton()
+        setupDeleteButton()
+        setupStarButton()
+    }
+
+    private fun setupStarButton() {
+        //recuperer
+        val starButton = findViewById<ImageView>(R.id.star_button)
+
+        if (currentPlant.liked) {
+            starButton.setImageResource(R.drawable.ic_star)
+        } else {
+            starButton.setImageResource(R.drawable.ic_unstar)
+        }
+    }
+
+    private fun setupDeleteButton() {
+        findViewById<ImageView>(R.id.delete_button).setOnClickListener {
+            //suppeimer la plante de la base
+            val repo = PlantRepository()
+            repo.deletePlant(currentPlant)
+            dismiss()
+        }
     }
 
     private fun setupCloseButton() {

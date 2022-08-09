@@ -51,4 +51,7 @@ class PlantRepository {
         databaseRef.child(plant.id).setValue(plant)
 
     }
+ //supprimer une plante de la base
+
+    fun deletePlant(plant: PlantModel) = databaseRef.child(plant.id).removeValue()
 }
