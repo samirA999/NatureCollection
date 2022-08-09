@@ -20,6 +20,15 @@ class PlantPopup (
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.popop_plants_details)
         setupComponents()
+        setupCloseButton()
+    }
+
+    private fun setupCloseButton() {
+        findViewById<ImageView>(R.id.close_button).setOnClickListener {
+            //fermer la fenetre
+            dismiss()
+
+        }
     }
 
     private fun setupComponents() {
