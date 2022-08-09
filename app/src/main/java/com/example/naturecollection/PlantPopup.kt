@@ -25,14 +25,29 @@ class PlantPopup (
         setupStarButton()
     }
 
+    private fun updateStar(button: ImageView){
+
+        if (currentPlant.liked) {
+            button.setImageResource(R.drawable.ic_star)
+        } else {
+            button.setImageResource(R.drawable.ic_unstar)
+        }
+
+
+    }
+
     private fun setupStarButton() {
         //recuperer
         val starButton = findViewById<ImageView>(R.id.star_button)
+        updateStar(starButton)
 
-        if (currentPlant.liked) {
-            starButton.setImageResource(R.drawable.ic_star)
-        } else {
-            starButton.setImageResource(R.drawable.ic_unstar)
+        //interaction
+        starButton.setOnClickListener {
+            currentPlant.liked = !currentPlant.liked
+            val repo = PlantRepository()
+            repo.updatePlant (currentPlant)
+            updateStar((starButton))
+
         }
     }
 
