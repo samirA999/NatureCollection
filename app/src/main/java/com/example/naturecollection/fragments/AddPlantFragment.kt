@@ -63,6 +63,9 @@ class AddPlantFragment (
             uploadedImage?.setImageURI(selectedImage)
 
 
+            //heberger sur le bucket
+
+
 
 
 
