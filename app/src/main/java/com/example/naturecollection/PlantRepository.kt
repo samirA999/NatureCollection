@@ -2,6 +2,7 @@ package com.example.naturecollection
 
 import android.net.Uri
 import com.example.naturecollection.PlantRepository.Singleton.databaseRef
+import com.example.naturecollection.PlantRepository.Singleton.downloadUri
 import com.example.naturecollection.PlantRepository.Singleton.plantList
 import com.example.naturecollection.PlantRepository.Singleton.storageReference
 import com.google.android.gms.tasks.Continuation
@@ -29,6 +30,9 @@ class PlantRepository {
 
         //creer une liste qui va contenir nos plantes
         val plantList = arrayListOf<PlantModel>()
+
+        //contenir le lien de limage courrente
+        var downloadUri: Uri? = null
     }
     fun updateData(callback: () -> Unit){
 
@@ -60,7 +64,7 @@ class PlantRepository {
         })
     }
     //creer une fonction pour envoyer des fichiers sur le storage
-    fun uploadImage(file: Uri) {
+    fun uploadImage(file: Uri , callback: () -> Unit) {
         //verifier que ce fichier n'est pas null
         if (file != null) {
             val fileName = UUID.randomUUID().toString() + ".jpg"
@@ -83,9 +87,10 @@ class PlantRepository {
                 if(task.isSuccessful){
 
                     //recuperer l'image
-                    val downloadURI = task.result
+                    downloadUri = task.result
+                    callback()
 
-                    //mettre à jour laperçu de limage
+
 
 
                 }
@@ -100,7 +105,12 @@ class PlantRepository {
         databaseRef.child(plant.id).setValue(plant)
 
     }
- //supprimer une plante de la base
 
+
+    //inserer une nouvelle plante en BDD
+    fun insertPlant(plant: PlantModel) = databaseRef.child(plant.id).setValue(plant)
+
+
+   //supprimer une plante de la base
     fun deletePlant(plant: PlantModel) = databaseRef.child(plant.id).removeValue()
 }

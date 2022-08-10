@@ -2,19 +2,28 @@ package com.example.naturecollection.fragments
 
 import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
+import android.widget.Spinner
 import androidx.fragment.app.Fragment
+import com.example.naturecollection.PlantModel
+import com.example.naturecollection.PlantRepository
+import com.example.naturecollection.PlantRepository.Singleton.downloadUri
 import com.example.naturecollection.R
+import java.util.*
 
 class AddPlantFragment (
     private val context: MainActivity
 
         ) : Fragment() {
+
+    private var file: Uri? = null
 
 
     private var uploadedImage : ImageView? = null
@@ -34,10 +43,42 @@ class AddPlantFragment (
         //lorsqu'on clique dessus ça ouvre les images du telephone
         pickupImageButton.setOnClickListener { pickupImage() }
 
+        //recuperer le bouton confirmer
+        val confirmButton = view.findViewById<Button>(R.id.confirm_button)
+        confirmButton.setOnClickListener { sendForm(view) }
+
 
         return view
 
 
+    }
+
+    private fun sendForm(view: View) {
+        val repo = PlantRepository()
+        repo.uploadImage(file!!){
+
+            val plantName = view.findViewById<EditText>(R.id.name_input).text.toString()
+            val plantDescription = view.findViewById<EditText>(R.id.description_input).text.toString()
+            val grow = view.findViewById<Spinner>(R.id.grow_spinner).selectedItem.toString()
+            val water = view.findViewById<Spinner>(R.id.water_spinner).selectedItem.toString()
+            val downloadImageUrl = downloadUri
+
+            //creer un nouvel objet PlantModel
+            val plant = PlantModel(
+                UUID.randomUUID().toString(),
+                plantName,
+                plantDescription,
+                downloadImageUrl.toString(),
+                grow,
+                water
+            )
+
+
+            //envoyer en base de donner
+            repo.insertPlant(plant)
+
+
+        }
     }
 
     private fun pickupImage() {
@@ -56,14 +97,16 @@ class AddPlantFragment (
             if(data == null || data.data == null ) return
 
             //recuperer l'image
-            val selectedImage = data.data
+            file = data.data
 
 
             //mettre a jour laperçu de limage
-            uploadedImage?.setImageURI(selectedImage)
+            uploadedImage?.setImageURI(file)
 
 
-            //heberger sur le bucket
+            /* //heberger sur le bucket
+            val repo = PlantRepository()
+            repo.uploadImage(selectedImage!!)*/
 
 
 
