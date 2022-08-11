@@ -47,4 +47,19 @@
     <style name="Theme.NatureCollection.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.NatureCollection.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--style pour pour bottom navigation-->
+    <style name="BottomNavigationStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/kanit</item>
+    </style>
+
+    <!--personnaliser la barre de navigation-->
+    <style name="BottomNavigationTheme" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/kanit</item>
+
+    </style>
+
 </resources>

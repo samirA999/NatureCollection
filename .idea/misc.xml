@@ -5,14 +5,17 @@
       <map>
         <entry key="app/src/main/res/drawable-anydpi/ic_close.xml" value="0.19" />
         <entry key="app/src/main/res/drawable-anydpi/ic_home.xml" value="0.19" />
+        <entry key="app/src/main/res/drawable/bottom_nav_color.xml" value="0.344" />
+        <entry key="app/src/main/res/drawable/bottom_naw_color.xml" value="0.345" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.19" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_add_plant.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_collection.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/item_horizontal_plant.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/item_vertical_plante.xml" value="0.5" />
         <entry key="app/src/main/res/layout/popop_plants_details.xml" value="0.22" />
+        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.29814814814814816" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.5" />
       </map>
     </option>
